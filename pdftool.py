@@ -13,6 +13,7 @@ try:
     pdffile = sys.argv[1]
 except:
     print("Didn't enter file name, exiting ...")
+    parser.print_usage()
     sys.exit(1)
 
 if results.rotonce == True:
