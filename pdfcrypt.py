@@ -3,10 +3,10 @@ import argparse
 import PyPDF2
 
 parser = argparse.ArgumentParser(description="PDF Encryption / Decryption Tool")
-parser.add_argument("-f", action="store", dest="filename", help="Specify filename")
-parser.add_argument("-e", action="store_true", dest="ecrypt", help="Encrypt file", default=False)
-parser.add_argument("-d", action="store_true", dest="dcrypt", help="Decrypt file", default=False)
-parser.add_argument("-p", action="store", dest="password", help="Password")
+parser.add_argument("-f", "--file", action="store", dest="filename", help="Specify filename")
+parser.add_argument("-e", "--encrypt", action="store_true", dest="ecrypt", help="Encrypt file", default=False)
+parser.add_argument("-d", "--decrypt", action="store_true", dest="dcrypt", help="Decrypt file", default=False)
+parser.add_argument("-p", "--password", action="store", dest="password", help="Password")
 results = parser.parse_args()
 
 try:

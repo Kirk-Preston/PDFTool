@@ -6,7 +6,7 @@ parser = argparse.ArgumentParser(description="PDF Rotation Tool")
 parser.add_argument("-90", action="store_true", dest="rotonce", help="Rotate PDF 90 Degrees CW", default=False)
 parser.add_argument("-180", action="store_true", dest="rottwice", help="Rotate the PDF 180 Degrees CW", default=False)
 parser.add_argument("-270", action="store_true", dest="rotthree", help="Rotate the PDF 270 Degrees CW", default=False)
-parser.add_argument("-f", action="store", dest="filename", help="Specify filename")
+parser.add_argument("-f", "--file", action="store", dest="filename", help="Specify filename")
 results = parser.parse_args()
 
 try:
